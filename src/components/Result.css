@@ -1,0 +1,27 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .header {
+    background-color: #162447;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .result-card {
+    background-color: #0f3460;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .result-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  

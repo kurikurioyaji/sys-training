@@ -1,0 +1,58 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .header {
+    background-color: #162447;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .question-card {
+    background-color: #0f3460;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .choice {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 20px; /* 固定位置から表示 */
+  }
+  
+  .choice input {
+    margin-right: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .submit-button {
+    background-color: #FFD700; /* 黄色系 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .back-button {
+    background-color: #87CEEB; /* 水色系 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+  }
+  
