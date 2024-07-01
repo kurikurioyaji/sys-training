@@ -4,13 +4,22 @@
   }
   
   .header {
-    background-color: #162447;
+    background-color: #a48211;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 20px;
+    position: relative;
   }
   
+  .header img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+  }
+
   .result-card {
     background-color: #0f3460;
     padding: 20px;
@@ -23,5 +32,13 @@
     font-size: 24px;
     margin-right: 10px;
     display: inline-block;
+  }
+  
+  .explanation {
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #1f4068;
+    padding: 10px;
+    border-radius: 5px;
   }
   

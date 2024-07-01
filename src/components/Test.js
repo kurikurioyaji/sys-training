@@ -10,7 +10,7 @@ function Test() {
   const [answers, setAnswers] = useState({});
 
   useEffect(() => {
-    api.get(`/api/questions?categoryId=${categoryId}`)
+    api.get(`/questions?categoryId=${categoryId}`)
       .then((response) => {
         setQuestions(response.data);
       })
@@ -24,7 +24,7 @@ function Test() {
   };
 
   const handleSubmit = () => {
-    api.post('/api/results/submit', {
+    api.post('/results/submit', {
       userId: localStorage.getItem('userId'),
       userName: localStorage.getItem('userName'),
       categoryId,
@@ -40,18 +40,19 @@ function Test() {
     <div className="container">
       <div className="header">
         <h1>Test</h1>
+        <img src="/sys-トレ.png" alt="Logo" />
       </div>
       {questions.map((question) => (
         <div key={question.id} className="question-card">
           <p>{question.text}</p>
-          {JSON.parse(question.choices).map((choice) => (
+          {JSON.parse(question.choices).map((choice, index) => (
             <div key={choice} className="choice">
-              <input
-                type="radio"
-                name={question.id}
-                value={choice}
-                onChange={() => handleChange(question.id, choice)}
-              />
+              <button
+                className={answers[question.id] === choice ? 'selected' : ''}
+                onClick={() => handleChange(question.id, choice)}
+              >
+                {index + 1}
+              </button>
               <label>{choice}</label>
             </div>
           ))}
